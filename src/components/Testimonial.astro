@@ -23,14 +23,14 @@ const { testimonial } = Astro.props;
 <section class="reviews">
   <div class="container">
     <div class="row justify-between">
-      <div class="lg:col-6">
+      <div class="lg:col-6 lg:mb-0 mb-4">
         <h2 set:html={markdownify(testimonial.title)}/>
       </div>
       <div class="lg:col-4">
         <p set:html={markdownify(testimonial.description)}/>
       </div>
     </div>
-    <div class="row mt-10">
+    <div class="row mt-2 md:mt-10">
       <div class="col-12">
         <TestimonialSlider list={testimonial.testimonial_list} client:load />
       </div>

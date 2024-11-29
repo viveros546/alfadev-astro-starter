@@ -22,7 +22,7 @@ const image_position_classes = (() => {
   if (image) {
     switch (image_position) {
       case "top":
-        return ["flex-row-reverse", "col-12", "col-12"];
+        return ["flex-row-reverse", "col-12", "col-12 mb-4 lg:mb-0"];
       case "bottom":
         return ["", "col-12", "col-12"];
       case "left":
@@ -46,6 +46,19 @@ const image_position_classes = (() => {
     <div
       class=`row items-center ${image_position ? 'custom-position' : ''} ${image_position_classes[0]}`
     >
+      {
+        image && image_position === "top" && (
+          <div class={`${image_position_classes[2]}`}>
+            <Image
+              class="w-1/2 mr-auto ml-auto object-contain"
+              alt="section-image"
+              src={image}
+              width={500}
+              height={333}
+            />
+          </div>
+        )
+      }
       <div class=`${image_position_classes[1]}`>
         <h1 class={`${section.title_size}`} set:html={markdownify(title)} />
 
@@ -61,19 +74,19 @@ const image_position_classes = (() => {
           )
         }
       </div>
-      {
-        image && (
-          <div class={`${image_position_classes[2]}`}>
-            <Image
-              class="w-full object-contain"
-              alt="section-image"
-              src={image}
-              width={500}
-              height={333}
-            />
-          </div>
-        )
-      }
+        {
+          image && image_position != "top" && (
+            <div class={`${image_position_classes[2]}`}>
+              <Image
+                class="w-full object-contain"
+                alt="section-image"
+                src={image}
+                width={500}
+                height={333}
+              />
+            </div>
+          )
+        }
     </div>
   </div>
 </section>

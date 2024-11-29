@@ -17,7 +17,13 @@ const indexSchema = z.intersection(
     features: z.object({
       title: z.string(),
       description: z.string(),
-      feaure_list: z.any(),
+      feature_list: z.array(
+        z.object({
+          title: z.string(),
+          content: z.string(),
+          icon: z.string(),
+        }),
+      ),
     }),
     testimonial: z.custom<Testimonial>(),
     call_to_action: z.object({
@@ -43,3 +49,5 @@ export const collections = {
   homepage: indexPage,
   pages: pagesCollection,
 };
+
+

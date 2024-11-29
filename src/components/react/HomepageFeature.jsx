@@ -10,14 +10,14 @@ const HomapageFeature = ({ feature_list }) => {
         return (
           <div
             key={i}
-            className="flex flex-col justify-between rounded-lg bg-surface p-5 shadow-lg hover:shadow-xl hover:shadow-secondary/50 transition-all hover:scale-105"
+            className="flex flex-col justify-between rounded-lg bg-surface p-4 shadow-lg hover:shadow-xl hover:shadow-secondary/50 transition-all hover:scale-105"
           >
             <div>
               <div className="flex flex-row items-center">
                 <span className="icon">
                 <FeatherIcon />
                 </span>
-                <h3 className="h4 text-xl lg:text-2xl ml-2">{item.title}</h3>
+                <h3 className="ml-2 break-all text-sm md:text-lg">{item.title}</h3>
               </div>
               <p dangerouslySetInnerHTML={{__html: markdownify(item.content)}}></p>
             </div>

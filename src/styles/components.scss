@@ -97,7 +97,7 @@
 
 //review-carousel
 .review {
-  @apply mx-[0.9rem] my-16 rounded-xl bg-surface px-3 py-6 pb-16 text-center shadow;
+  @apply mx-[0.9rem] my-10 rounded-xl bg-surface px-3 py-6 pb-16 text-center shadow;
 
   &-author-avatar {
     @apply mx-auto -mt-12 h-[90px] w-[90px] -translate-y-5 rounded-full p-0.5;
@@ -175,7 +175,7 @@
 
 .key-feature-grid {
   p {
-    @apply mt-3 text-base text-text-secondary;
+    @apply mt-3 text-sm md:text-base break-all text-text-secondary;
   }
 
   .icon {
