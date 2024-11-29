@@ -119,7 +119,7 @@ testimonial:
 
 ## Call to Action
 call_to_action:
-  title: "Because we love <span class='text-accent'>Astro</span>"
+  title: "Because we love <span class='text-accent text-shadow-[0px_5px_15px]' >Astro</span> and <span class='text-[#38bdf8] text-shadow-[0px_5px_15px]'>Tailwind</span>."
   description: "Save yourself some time (and sanity). Use this template and act like you planned everything from scratch. We won't tell. **Just be sure to leave a star, please.**"
   button: 
     label: "Grab the Starter"

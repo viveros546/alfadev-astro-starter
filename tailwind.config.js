@@ -33,9 +33,9 @@ module.exports = {
       },
       textShadow: {
         // --tw-shadow-color is not defined in tailwindcss by now
-        sm: '0 1px 2px var(--tw-shadow-color)',
-        DEFAULT: '0 2px 3px var(--tw-shadow-color)',
-        lg: '0 8px 16px var(--tw-shadow-color)',
+        sm: '0 0px 2px var(--tw-shadow-color)',
+        DEFAULT: '0 0px 3px var(--tw-shadow-color)',
+        lg: '0 0px 8px var(--tw-shadow-color)',
       },
 
       // Custom animations
