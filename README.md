@@ -4,7 +4,7 @@
 ![https://tailwindcss.com/](https://img.shields.io/badge/tailwind-3.4.14-cyan?style=flat&logo=tailwindcss&link=https%3A%2F%2Ftailwindcss.com%2F)
 
 
-**An Astro Starter** 🛠️ - *batteries-included* - for creating content-driven pages like portfolios, landing pages, showcases, and more.  
+**An Astro Starter** 🛠️ - *batteries-included* - designed for content-driven pages like portfolios, landing pages, showcases, and more.
 
 With a focus on simplicity, speed, and developer happiness, this starter helps you skip the repetitive boilerplate setup and dive straight into creating.  
 
