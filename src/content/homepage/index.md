@@ -8,7 +8,7 @@ banner:
   image: /images/banner-img.webp
   buttons:
     - label: Get the Code
-      href: "https://github.com/alfadev/alfadev-astro-starter"
+      href: "https://github.com/diego-alfadev/alfadev-astro-starter"
       target: "_blank"
       icon: _GitHub
       addClasses: "w-full bg-gray-900 text-white hover:bg-accent dark:border-white/10 dark:border"
