@@ -13,6 +13,8 @@ import { getEntry } from "astro:content";
 import type { PageType } from "@/content/page.types";
 import type { ContentEntryMap } from "astro:content";
 
+const GTAG = import.meta.env.GTAG_ID
+
 // font families
 const pf = theme.fonts.font_family.primary;
 const sf = theme.fonts.font_family.secondary;
@@ -171,6 +173,17 @@ const _noindex =
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=5"
     />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src={"https://www.googletagmanager.com/gtag/js?id="+GTAG}></script>
+    <script type="text/javascript" define:vars={{GTAG}}>
+      // Pasamos la variable GTAG_ID al navegador como una variable global
+      window.GTAG_ID = GTAG;
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', window.GTAG_ID);
+    </script>
 
     <!-- title -->
     <title>
