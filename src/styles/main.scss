@@ -23,7 +23,7 @@
 body {
   --sb-track-color: transparent;
   --sb-thumb-color: rgba(var(--primary), 0.6);
-  --sb-size: 0.3rem;
+  --sb-size: 0.8rem;
 }
 
 body::-webkit-scrollbar {
@@ -38,7 +38,7 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background: var(--sb-thumb-color);
   border-radius: 8px;
-  border: 2px solid var(--sb-track-color);
+  border: 3px solid rgba(var(--background))
 }
 
 @supports not selector(::-webkit-scrollbar) {
