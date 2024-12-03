@@ -2,10 +2,10 @@
 # Does not contain meta customizations because it is the homepage and config is already set in the config file
 
 banner:
-  title: 'An Astro Starter <span class="text-accent"> batteries-included</span>'
+  title: 'An <span class="text-accent text-shadow-[0px_5px_15px] shadow-accent/10">Astro</span> Starter <span class="text-secondary"> batteries-included</span>'
   title_size: "text-4xl md:text-6xl"
   content: "A fully responsive astro starter repo, ideal for simple (yet laborious) content-driven pages or landings."  
-  image: /images/banner-img.webp
+  image: /images/logo_v5_xl_pfp.webp
   buttons:
     - label: Get the Code
       href: "https://github.com/diego-alfadev/alfadev-astro-starter"
