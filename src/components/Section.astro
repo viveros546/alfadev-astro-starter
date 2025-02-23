@@ -1,0 +1,17 @@
+---
+export interface SectionProps {
+  section: {
+    title: string;
+    content: string;
+  };
+}
+
+const { section } = Astro.props;
+---
+
+<section class="bg-gray-900 text-white py-12 px-6 rounded-lg shadow-lg">
+  <div class="container mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-4 text-blue-400">{section.title}</h2>
+    <p class="text-lg text-gray-300">{section.content}</p>
+  </div>
+</section>

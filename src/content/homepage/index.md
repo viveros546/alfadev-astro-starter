@@ -2,128 +2,104 @@
 # Does not contain meta customizations because it is the homepage and config is already set in the config file
 
 banner:
-  title: 'An <span class="text-accent text-shadow-[0px_5px_15px] shadow-accent/10">Astro</span> Starter <span class="text-secondary"> batteries-included</span>'
-  title_size: "text-4xl md:text-6xl"
-  content: "A fully responsive astro starter repo, ideal for simple (yet laborious) content-driven pages or landings."  
+  title: 'Transforma tu negocio con tecnología avanzada: ¡Haz crecer tus oportunidades hoy mismo!'
+  title_size: "text-2xl md:text-4xl"
+  content: "Desarrollamos software a medida, aplicaciones web, sitios web y paginas web garantizando calidad, escalabilidad y seguridad para tu empresa."
   image: /images/logo_v5_xl_pfp.webp
   buttons:
-    - label: Get the Code
-      href: "https://github.com/diego-alfadev/alfadev-astro-starter"
-      target: "_blank"
-      icon: _GitHub
+    - label: Conócenos
+      href: "/about"
+      target: "_self"
+      icon: _Info
       addClasses: "w-full bg-gray-900 text-white hover:bg-accent dark:border-white/10 dark:border"
 
+
 sections:
-  - title: Tired of writing the same code over and over again?
-    content: "We've all been there... Setting up the same SEO, theming, and responsive layout boilerplate again and again. Say goodbye to that! <b class='text-accent'>alfadev-astro-starter</b> lets you jump straight into creating, skipping the repetitive groundwork."
-    image: /images/tired-of-writing.webp
+  - title: Soluciones a medida para tu empresa
+    content: "Nos especializamos en el desarrollo de software personalizado que optimiza los procesos y mejora la eficiencia de tu negocio. Desde plataformas web, creamos soluciones tecnológicas adaptadas a tus necesidades."
+    image: /images/soluciones-medida.webp
 
-  - title: This is not a library
-    content: It's a <b class='text-accent'>ready-to-go template</b>. No steep learning curves or dozens of new dependencies. Just the essentials to build content-driven pages with ease.<br/>If you're familiar with <span class="text-accent font-bold">Astro</span>, you are good to go.
-    image: /images/this-is-not-a-library.webp
+  - title: Tecnología de vanguardia
+    content: "Implementamos las últimas tendencias en tecnología, utilizando frameworks y herramientas de desarrollo escalables para garantizar el éxito de cada proyecto."
+    image: /images/tecnologia-vanguardia.webp
 
-  - title: Optimized out of the box
-    content: Lightweight and fast. Packed with <span class="text-accent font-bold">Astro</span>, <span class="text-[#38bdf8] font-bold">tailwind</span> and <span class="text-[#e41c81] font-bold">Sass</span> goodness, so your pages load <b class='text-accent'>blazing fast</b>—right from the start. <br/> All the pages are configured in a way that are SEO-friendly and defined with markdown.
-    image: /images/optimized-out-of-the-box.webp
+  - title: Seguridad y calidad garantizada
+    content: "Nuestro compromiso es ofrecer software seguro y de alta calidad. Aplicamos las mejores prácticas en desarrollo y pruebas para garantizar la estabilidad y protección de datos."
+    image: /images/seguridad-calidad.webp
 
-  - title: Looks great, day or night
-    content: "With <b class='text-accent'>built-in dark theme support</b>, your site will look amazing no matter what time of day your users visit. Or what their eyes prefer.<br/> <br/>Forget convoluted theming systems. alfadev-astro-starter keeps it <b class='text-accent'>simple and extensible</b>, so you can focus on your design and let the code work fori you."
-    image: /images/loogs-good.webp
+  - title: Soporte y acompañamiento continuo
+    content: "Más que un proveedor, somos tu socio tecnológico. Brindamos asesoramiento, mantenimiento y actualizaciones para asegurar que tu software evolucione junto a tu negocio."
+    image: /images/soporte-acompanamiento.webp
 
 
-##key features
+
 features:
-  title: Why <span class="text-accent">alfadev-starter</span>?
-  description: Because every content-driven page needs a lot boilerplate to initialize, and **we provide you with the tools and guidelines** needed to focus on what's important.
+  title: ¿Por qué elegirnos?
+  description: "Porque entendemos que el desarrollo de software es clave para el crecimiento de tu empresa, y te ofrecemos soluciones eficientes y escalables."
   feature_list:
-    - icon: "box"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Simple
-      content: Avoid Complexity, small yet not useless. Loaded, but <b class="text-text">not overwhelming</b>.
-    - icon: "clock"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Up-to-date
-      content: Using the latest version and best practices of <span class="text-accent font-bold">Astro</span>, <span class="text-[#38bdf8] font-bold">tailwindcss</span> and <span class="text-[#e41c81] font-bold">Sass</span>
-    - icon: "search"  #icon package react-feather-icon [https://feathericons.com/]
-      title: SEO Friendly
-      content: Boost your site's visibility with <b class="text-text">built-in SEO optimizations</b>, including automatic sitemap generation using <a target='blank' href="https://docs.astro.build/es/guides/integrations-guide/sitemap/"><span class="text-accent font-bold underline">astrojs/sitemap</span></a>.
-    - icon: "plus"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Extendable
-      content: Add or change content just by <b class="text-text">editing markdown files</b>, so it stays in one place regardless of the code.
-    - icon: "coffee"  #icon package react-feather-icon [https://feathericons.com/]
-      title: "Focused"
-      content: Put you effort on what's important, not on small details. Dont worry about <span class="text-shadow-sm shadow-surface-contrast">***that damn shadow***</span>.
-    - icon: "tool"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Customizable
-      content: Every corner of the page <b class="text-text">can be easily changed</b> to fit your needs.
-    - icon: "moon"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Dark Mode Support
-      content: Fully supports ***dark theme*** with an easy-to-extend theming system.
-    - icon: "feather"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Lightweight
-      content: Fast and efficient. Every asset is optimized to ensure <b class="text-text">minimal load times</b>.
-    - icon: "layers"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Modular
-      content: Built with ***reusable components*** that simplify adding or editing sections of the page.
-    - icon: "zap"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Performance-First
-      content: Designed with <b class="text-text">best-in-class performance</b> metrics to improve the user experience.
-    - icon: "layout"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Content-Centric
-      content: Focused on delivering content seamlessly, making it ideal for <b class="text-text">portfolios, showcases, or landing pages</b>.
-    - icon: "code"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Developer-Friendly
-      content: Crafted for developers who value ***simplicity, flexibility, and modern*** tools.
-    
+    - icon: "box"
+      title: Soluciones Personalizadas
+      content: Diseñamos software a la medida de las necesidades de cada negocio.
+    - icon: "clock"
+      title: Entregas Puntuales
+      content: Cumplimos con los plazos acordados sin comprometer la calidad.
+    - icon: "search"
+      title: Innovación y Tendencias
+      content: Aplicamos las mejores tecnologías y metodologías de desarrollo.
+    - icon: "plus"
+      title: Flexibilidad
+      content: Adaptamos nuestras soluciones a los cambios del mercado y las necesidades de nuestros clientes.
+    - icon: "coffee"
+      title: Enfoque en el Cliente
+      content: Nos aseguramos de entender y resolver los retos específicos de cada negocio.
+    - icon: "tool"
+      title: Tecnología Moderna
+      content: Trabajamos con frameworks y herramientas de última generación.
+    - icon: "moon"
+      title: Soporte Integral
+      content: Brindamos asistencia y mantenimiento post-implementación.
+    - icon: "feather"
+      title: Seguridad
+      content: Implementamos protocolos robustos para proteger la información.
+    - icon: "layers"
+      title: Desarrollo Modular
+      content: Creamos soluciones escalables y de fácil mantenimiento.
+    - icon: "zap"
+      title: Alto Rendimiento
+      content: Optimizamos cada proyecto para garantizar eficiencia y velocidad.
+    - icon: "layout"
+      title: Experiencia de Usuario
+      content: Diseñamos interfaces intuitivas y atractivas.
 
-
-
-
-#testimonial
 testimonial:
-  title: Our adopters and their clients <ins>have nice things to say</ins> about us
-  description: Or they will, once they taste a drop of **what we've built**
+  title: Nuestros clientes confían en nosotros
+  description: "Descubre lo que dicen sobre nuestra empresa y cómo hemos ayudado a transformar sus negocios con soluciones tecnológicas."
   testimonial_list:
-    - author: Jhon Doe
-      organization: Example Corp
+    - author: Carlos Ramírez
+      organization: Tech Solutions
       rating: five
-      content: "I can't believe this testimonial is autogenerated! But hey, I’d still give it <b class='text-accent'>five stars</b>!"
-    - author: Jane D. Smith
-      organization: Acme Inc.
+      content: "El equipo de desarrollo nos ayudó a digitalizar nuestros procesos de manera efectiva y con gran profesionalismo."
+    - author: Laura Fernández
+      organization: InnoCorp
       rating: four
-      content: "Doesn't matter if I exist or not, this project is <b class='text-accent'>truly fantastic</b>. Highly recommend!"
-    - author: Bob A. Nonymous
-      organization: FutureTech Labs
+      content: "Excelente servicio y atención al cliente. Nos entregaron una plataforma escalable y muy intuitiva."
+    - author: Miguel González
+      organization: SoftNet
       rating: five
-      content: "Wow, this is so good, I’d recommend it to all my imaginary friends."
-    - author: Alice Placeholder
-      organization: Startup Ipsum
+      content: "Su equipo comprendió nuestras necesidades y nos proporcionó una solución tecnológica perfecta."
+    - author: Ana Sánchez
+      organization: DigitalPro
       rating: three
-      content: "If I were real, I’d definitely complain less. But it’s still pretty good!"
-    - author: Richard Fakenham
-      organization: Lorem Ipsum Ltd.
+      content: "El proyecto fue un éxito, aunque algunos tiempos de entrega podrían mejorar. Aun así, recomiendo sus servicios."
+    - author: David Pérez
+      organization: CloudX
       rating: five
-      content: "Astounding! Even for a made-up person like me, this template <b class='text-accent'>exceeds expectations</b>."
-    - author: Emily Mockson
-      organization: Phantom Co.
-      rating: four
-      content: "No real user said this, but they should! Such a slick and modern experience."
-    - author: Alex Testworth
-      organization: AlphaBeta Agency
-      rating: five
-      content: "Best autogenerated testimonial I’ve ever seen. 10/10 would fake it again."
-    - author: Chris Placeholder
-      # avatar: "/images/users/user-8.png"
-      organization: Ghost Design Studios
-      rating: four
-      content: "You don’t have to believe me, but you should believe in this product!"
+      content: "Gran calidad y seguridad en el desarrollo. Definitivamente seguiremos trabajando con ellos."
 
-
-## Call to Action
 call_to_action:
-  title: "Because we love <span class='text-accent text-shadow-[0px_5px_15px]' >Astro</span> and <span class='text-[#38bdf8] text-shadow-[0px_5px_15px]'>Tailwind</span>."
-  description: "Save yourself some time (and sanity). Use this template and act like you planned everything from scratch. We won't tell. **Just be sure to leave a star, please.**"
-  button: 
-    label: "Grab the Starter"
-    href: "https://github.com/diego-alfadev/alfadev-astro-starter"
+  title: "Transforma tu empresa con Soluciones Digitales de Alto Impacto."
+  description: "Haz crecer tu negocio con tecnología innovadora y personalizada. Contáctanos y descubre cómo podemos ayudarte."
+  button:
+    label: "Solicitar una Consulta por WhatsApp"
+    href: "https://wa.me/573116901241"
     color: accent
-
----

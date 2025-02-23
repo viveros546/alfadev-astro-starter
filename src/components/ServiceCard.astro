@@ -1,0 +1,23 @@
+---
+// Recibe `title` y `description` como props
+export interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<div class="service-card">
+  <h3>{title}</h3>
+  <p>{description}</p>
+</div>
+
+<style>
+.service-card {
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+}
+</style>

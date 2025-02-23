@@ -1,6 +1,6 @@
 {
   "site": {
-    "title": "alfadev-astro-starter",
+    "title": "VIPsof - AlfaDev Astro Starter",
     "base_url": "https://astro-starter.alfadev.io",
     "base_path": "/",
     "trailing_slash": false,
@@ -8,23 +8,29 @@
     "logo": "/images/logo.png",
     "logo_width": "47",
     "logo_height": "47",
-    "logo_text": "alfadev-astro-starter"
+    "logo_text": "VIPsof"
   },
-
   "params": {
-    "footer_description": "Building cool things, one line of code (and a lot of coffee) at a time. Got questions? Or just bored? Reach out!",
+    "footer_description": "Construyendo cosas geniales, una línea de código (y mucho café) a la vez. ¿Tienes preguntas? ¿O simplemente estás aburrido? ¡Contáctanos!",
     "email": "diego.alfadev@gmail.com",
-    "location": "Somewhere on Earth, where the Wi-Fi is decent and the coffee is strong.",
-    "phone": "+704-555-0127 (but let's be honest, email is faster)",
+    "location": "En algún lugar de la Tierra, donde el Wi-Fi es decente y el café es fuerte.",
+    "phone": "+704-555-0127 (pero seamos honestos, el correo electrónico es más rápido)",
     "contact_form_action": "#",
-    "copyright": "Copyright © 2023 proudly crafted by [AlfaDev](https://github.com/diego-alfadev)"
-},
-
+    "copyright": "Copyright © 2023, creado con orgullo por [AlfaDev](https://github.com/diego-alfadev)"
+  },
   "metadata": {
     "meta_author": "alfadev",
     "meta_image": "/images/logo.png",
-    "meta_description": "alfadev-astro-starter is a starter template for Astro, the modern static site generator for the modern web.",
-    "meta_keywords": ["astro", "Astro Starter", "alfadev", "Diego Alfaro Sáez", "static site generator", "modern web", "astro template"],
-    "meta_application_name": "alfadev-astro-starter"
+    "meta_description": "VIPsoft - AlfaDev Astro Starter es una plantilla inicial para Astro, el generador de sitios estáticos moderno para la web moderna.",
+    "meta_keywords": [
+      "astro",
+      "Astro Starter",
+      "alfadev",
+      "Diego Alfaro Sáez",
+      "generador de sitios estáticos",
+      "web moderna",
+      "plantilla de astro"
+    ],
+    "meta_application_name": "VIPsoft - AlfaDev Astro Starter"
   }
 }

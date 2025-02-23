@@ -1,0 +1,114 @@
+---
+
+import PageHeader from "@/components/core/PageHeader.astro";
+import Base from "@/layouts/Base.astro";
+import Section from "@/components/Section.astro";
+import { getEntry } from "astro:content";
+import FeatherIcon from "@/components/react/FeatherIcon";
+import { data } from "../content/services/index.mdx"; // Ajusta esta ruta
+
+const features = await getEntry("services", "index");
+
+if (!features) {
+  console.error("No se encontraron servicios");
+  throw new Error("No se encontraron servicios");
+}
+
+let Content;
+try {
+  const renderedContent = await features.render();
+  Content = renderedContent.Content;
+} catch (error) {
+  console.error("Error al renderizar los servicios:", error);
+  Content = null;
+}
+---
+
+<Base>
+  <section class="py-16">
+    <div class="container">
+      <PageHeader page_data={features.data} />
+    </div>
+    <div class="container">
+      {Content ? <Content /> : <p>Error al cargar el contenido</p>}
+      <div class="text-center">
+        <Section section={{ title: data.frontmatter.title, content: data.frontmatter.description }} />
+      </div>
+
+      <div class="row mb-10 lg:mb-12">
+        {data.services.map(service => (
+          <div class="col-12 md:col-4 text-center py-6" key={service.title}>
+            <div class="service-box bg-white shadow-lg rounded-xl p-8 hover:bg-blue-200">
+              <div class="text-primary text-5xl mb-6">
+                <i class={service.icon}></i>
+              </div>
+              <h4 class="text-xl font-extrabold">{service.title}</h4>
+              <p class="mt-4 text-gray-700">{service.description}</p>
+              <ul class="mt-4 text-gray-700 text-left list-disc list-inside">
+                {service.features.map(feature => (
+                  <li key={feature}>{feature}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div class="text-center">
+        <a href="https://wa.me/573116901241" class="whatsapp-button" target="_blank" rel="noopener noreferrer">
+          <FeatherIcon name="message-circle" size={24} color="white" />
+          Contáctanos por WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .service-box {
+    border-radius: 16px;
+  }
+  .service-box:hover {
+    background-color: #b3e5fc;
+  }
+  .whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #25D366;
+    color: white;
+    font-size: 16px;
+    border-radius: 16px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: -20px;
+  }
+  .whatsapp-button:hover {
+    background-color: #1EBEA5;
+  }
+  .whatsapp-button svg {
+    margin-right: 8px;
+  }
+  .call-to-action {
+    background-color: #1a202c;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 40px;
+  }
+  .call-to-action .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f56565;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+  }
+  .call-to-action .cta-button:hover {
+    background-color: #e53e3e;
+  }
+</style>

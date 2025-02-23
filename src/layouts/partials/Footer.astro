@@ -23,33 +23,31 @@ const has_social = Object.entries(social).some(
         </p>
         <p class="mt-6" set:html={markdownify(copyright)} />
       </div>
-      {
-        has_social && (
-          <>
-            <div class="col-12 mt-12 md:col-6 lg:col-3">
-              <h6>{social.title ?? "Social"}</h6>
-              <Social source={social} className="social-icons mt-4 lg:mt-6" />
-            </div>
-            <div class="col-12 mt-12 md:col-6 lg:col-3">
-              <h6>Quick Links</h6>
-              <ul>
-                {footer.map((item, i) => (
-                  <li class={footer.length - 1 === i ? "mb-0" : "mb-4"}>
-                    <a
-                      class="hover:text-primary hover:underline "
-                      href={item.url}
-                    >
-                      {item.name}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </>
-        )
-      }
+      {has_social && (
+        <>
+          <div class="col-12 mt-12 md:col-6 lg:col-3">
+            <h6>{social.title ?? "Redes Sociales"}</h6>
+            <Social source={social} className="social-icons mt-4 lg:mt-6" />
+          </div>
+          <div class="col-12 mt-12 md:col-6 lg:col-3">
+            <h6>Enlaces Rápidos</h6>
+            <ul>
+              {footer.map((item, i) => (
+                <li class={footer.length - 1 === i ? "mb-0" : "mb-4"}>
+                  <a
+                    class="hover:text-primary hover:underline"
+                    href={item.url}
+                  >
+                    {item.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </>
+      )}
       <div class="col-12 mt-12 md:col-6 lg:col-3">
-        <h6>Location & Contact</h6>
+        <h6>Ubicación y Contacto</h6>
         <ul>
           <li class="mb-2">{location}</li>
           <li class="mb-2">
