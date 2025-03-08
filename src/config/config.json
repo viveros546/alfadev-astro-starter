@@ -1,6 +1,6 @@
 {
   "site": {
-    "title": "VIPsof - AlfaDev Astro Starter",
+    "title": "VIPsof - DESARROLLO DE SOFTWARE",
     "base_url": "https://astro-starter.alfadev.io",
     "base_path": "/",
     "trailing_slash": false,
@@ -16,12 +16,12 @@
     "location": "En algún lugar de la Tierra, donde el Wi-Fi es decente y el café es fuerte.",
     "phone": "+704-555-0127 (pero seamos honestos, el correo electrónico es más rápido)",
     "contact_form_action": "#",
-    "copyright": "Copyright © 2023, creado con orgullo por [AlfaDev](https://github.com/diego-alfadev)"
+    "copyright": "Copyright © 2025, creado con orgullo por VIPsof"
   },
   "metadata": {
     "meta_author": "alfadev",
     "meta_image": "/images/logo.png",
-    "meta_description": "VIPsoft - AlfaDev Astro Starter es una plantilla inicial para Astro, el generador de sitios estáticos moderno para la web moderna.",
+    "meta_description": "VIPsof - DESARROLLO DE SOFTWARE",
     "meta_keywords": [
       "astro",
       "Astro Starter",
@@ -31,6 +31,6 @@
       "web moderna",
       "plantilla de astro"
     ],
-    "meta_application_name": "VIPsoft - AlfaDev Astro Starter"
+    "meta_application_name": "VIPsof - DESARROLLO DE SOFTWARE"
   }
 }

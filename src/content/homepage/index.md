@@ -2,7 +2,7 @@
 # Does not contain meta customizations because it is the homepage and config is already set in the config file
 
 banner:
-  title: 'Transforma tu negocio con tecnología avanzada: ¡Haz crecer tus oportunidades hoy mismo!'
+  title: 'Impulsa tu negocio con tecnología avanzada: ¡Adquiere tu software hoy!'
   title_size: "text-2xl md:text-4xl"
   content: "Desarrollamos software a medida, aplicaciones web, sitios web y paginas web garantizando calidad, escalabilidad y seguridad para tu empresa."
   image: /images/logo_v5_xl_pfp.webp
@@ -100,6 +100,8 @@ call_to_action:
   title: "Transforma tu empresa con Soluciones Digitales de Alto Impacto."
   description: "Haz crecer tu negocio con tecnología innovadora y personalizada. Contáctanos y descubre cómo podemos ayudarte."
   button:
-    label: "Solicitar una Consulta por WhatsApp"
+    label: "Consulta por WhatsApp"
     href: "https://wa.me/573116901241"
     color: accent
+  class: "call-to-action"
+
